@@ -11,7 +11,8 @@
 `四指 + 左右滑动` 左右切换满屏的窗口  
 `command + shift + f ` 窗口最大化／恢复  
 `command + option + m ` 窗口最小化  
-
+`command + 空格（即右上角的放大镜）` + `ter` + ` 回车 `  调起Mac 终端  
+`finder` - `前往` - `打开文件夹` - `/private/etc/` - hosts文件  
 
  
 *  sublime  
