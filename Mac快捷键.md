@@ -2,7 +2,17 @@
 
 `Shift+Command+A` 打开应用程序 选择文本文档  
  或者直接拖拽文字到桌面   
-`command + f3` 一键显示桌面
+ 
+*  Mac快捷操作  
+
+`command + f3` 一键显示桌面  
+`三指 + 左右滑动` 复制整行  
+`三指 + 左右移动title` 移动当前窗口   
+`四指 + 左右滑动` 左右切换满屏的窗口  
+`command + shift + f ` 窗口最大化／恢复  
+`command + option + m ` 窗口最小化  
+
+
  
 *  sublime  
 
@@ -11,4 +21,5 @@
 `command + shift + p`  open Package Control  
 `command + F ` find  
 `command + ／ - ` 字号大小    
-
+`切换为中文  shift + []`  生成 ` 「」`  
+`切换为英文  shift + []`  生成 ` {} `
