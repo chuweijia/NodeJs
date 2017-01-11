@@ -1,0 +1,107 @@
+/*PuBu.css*/
+body{
+	font-family: 'Lato', sans-serif !important;
+}
+#popup1{
+	display: none;
+	}
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 0.2s;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  width: 100%;
+  max-height: 30%;
+  overflow: auto;
+  margin: 0px auto;
+  max-width: 200px;
+}
+.overlay:target:before {
+    display: none;
+    /*background-color: red;*/
+}
+.overlay:before {
+  content:"";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background: rgba(0, 0, 0, 0.6);
+
+  position: fixed;
+  z-index: 9;
+}
+.overlay .popup {
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: fixed;
+  top: 0;
+  left: 35%;
+  padding: 25px;
+  margin: 70px auto;
+  z-index: 10;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+.overlay:target .popup {
+    top: -100%;
+    left: -100%;
+}
+
+@media screen and (max-width: 768px){
+  .box{
+    width: 70%;
+  }
+  .overlay .popup{
+    width: 70%;
+    left: 15%;
+  }
+}
+li h2,.content h2{
+	font-size: 15px;
+    text-transform: uppercase;
+    background: #222;
+    color: white;
+    padding: 2px 5px;
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+li p,.content p{
+	margin: 10px 0px;
+    font-style: normal;
+    line-height: 20px;
+    padding-bottom: 5px;
+    font-family: 'Droid Sans', Arial, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+li .intro,.content .intro{
+	color: #000;
+    font-family: 'Georgia', 'Trebuchet MS', serif;
+    font-size: 12px;
+    border-top: 1px solid rgb(231, 231, 231);
+}
+/*#container li:hover{
+	box-shadow:0 1px 30px rgba(0, 0, 0, 0.4);
+}*/
+
+#container img{
+	width: 190px;
+}

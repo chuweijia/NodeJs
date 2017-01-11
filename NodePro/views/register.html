@@ -1,0 +1,155 @@
+<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="style/register.css">
+<div class='login'>
+  <h2>Register</h2>
+  <input name='username' placeholder='Username' type='text'>
+  <input id='pw' name='password' placeholder='Password' type='password'>
+  <input name='email' placeholder='E-Mail Address' type='text'>
+  <div class='agree'>
+    <input id='agree' name='agree' type='checkbox'>
+    <label for='agree'></label>Accept rules and conditions
+  </div>
+  <input class='animated' type='submit' value='Register'>
+  <a class='forgot' href='#'>Already have an account?</a>
+</div>
+ -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/register.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/> 
+    <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+</head>
+<body>
+    <div class='login'>
+  <h2>Register</h2>
+  <div class="box1">
+    <div id="box1_content">
+        <input id='username'name='username' placeholder='Username' type='text'>
+        <span class="sp-nam"></span>
+    </div>
+  </div>
+  <input id='password' name='password' placeholder='Password' type='password' class=
+  "wrong">
+  <div class="box3">
+    <div id="box3_content">
+        <input id='cpassword' name='cpassword' placeholder='Confirm Password' type='password'>
+        <span class="sp-cpsw"></span>
+    </div>
+    </div>
+  <div class='agree'>
+    <input id='agree' name='agree' type='checkbox'>
+    <label for='agree'></label>Accept rules and conditions
+  </div>
+  <div id="register">
+  <input id="reg" class='animated' type='submit' value='Register'>
+  <a class='forgot' href='#'>Already have an account?</a>
+  </div>
+</div>
+<script type="text/javascript">
+    $(function(){ 
+        
+        // document.getElementById("password").disabled=true;
+       // console.log(window.getComputedStyle(document.getElementById("box1_content"), ":after").getPropertyValue("display"));//获取伪元素的样式
+       document.styleSheets[0].addRule('#box1_content::after','display: none');//强制none
+       $("#username").on('focus',function(){
+            console.log("focus!!");
+            $(".sp-nam").removeClass("sp-nam-dis");//保证每次都能重新判断数字
+            $(this).on('keyup',function(){
+                console.log("keyup!!");
+                var count = $(this).val().split('').length;
+                $(".sp-nam").html("The count is"+" "+count+"");
+            });
+       })
+
+       $("#username").on('focusout',function(){
+            console.log("focusout!!");
+            var count = $(this).val().split('').length;
+            if(count<7&&count!=0){
+                 $(".sp-nam").addClass("sp-nam-dis");
+                 document.styleSheets[0].addRule('#box1_content::after','display: inline-block');
+                 $("#password").attr("disabled",false);
+            }
+            else if(count == 0 ){
+                 $(".sp-nam").html("The Number cannot be null!!");
+                 document.styleSheets[0].addRule('#box1_content::after','display: none');
+                 $("#password").attr("disabled",true);
+            }
+            else {
+                $(".sp-nam").html("The max-size is 6!!");
+                 document.styleSheets[0].addRule('#box1_content::after','display: none');
+                 $("#password").attr("disabled",true);
+
+            }
+
+       });
+       // var strue = document.getElementById("agree").checked;
+       // console.log(strue);
+//       if((document.getElementById("agree").checked)=="true"){
+//             console.log("点击事件");
+//             $("#reg").addClass("noanimated");
+
+// }
+      $("#agree").on("click",function(){
+            console.log("点击事件");
+            var strue = document.getElementById("agree").checked;
+            console.log(strue);
+
+            if(strue == true){
+                console.log("选中");
+                console.log(document.getElementById("reg"));
+               document.getElementById("reg").removeAttribute("class");
+            }
+       })
+
+        //更改伪元素的样式 
+        $("#login1").click(function(){ 
+            location.href = 'login';
+        });
+        // if($("#agree").attr("checked")===true){
+        //                  // $("#register #reg").removeClass("animated");
+        //                  console.log("ss");
+        //                  document.getElementById("reg").removeAttribute("class");  
+        //                  // document.styleSheets[0].addRule('#reg::hover','display: none');无法获取
+
+        //             }
+        $("#reg").click(function(){ //提交的时候判断密码 
+            // console.log($("#reg").attr("checked"));
+            var username = $("#username").val();
+            var password = $("#password").val();
+            var cpassword = $("#cpassword").val();
+            if(password !== cpassword){ 
+                // console.log("密码不匹配！！");
+                $(".sp-cpsw").removeClass("sp-cpsw-dis");
+                 $(".sp-cpsw").html("Not Same！！");
+                $("#cpassword").css("border","1px solid red");
+            }else if(password === cpassword){
+                 $(".sp-cpsw").addClass("sp-cpsw-dis");
+                 $("#cpassword").css({"border":"0","border-bottom":"1px solid #435160"});
+            var data = {"uname":username,"upwd":password};
+            $.ajax({ 
+                url: '/register',
+                type: 'post',
+                data: data,
+                success: function(data,status){ 
+                    if(status == 'success'){ 
+                        console.log("发送成功");
+                        location.href = 'login';
+                    }
+                },
+                error: function(data,err){ 
+                        console.log("发送失败");
+                        location.href = 'register';
+                }
+            }); 
+        }
+        });
+    });
+</script>
+</body>
+</html>

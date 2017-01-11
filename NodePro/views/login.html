@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta http-equiv = "Content-Type" content="text/html" charset="utf-8">
+	<title>Document</title>
+  <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="stylesheets/login.css">
+  <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+</head>
+<body style="background:transparent">
+	<div class="login">
+  	<div class="heading">
+    <h2>Sign in</h2>
+    <form  method="post" onsubmit="return false">
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+        <input id ="username"type="text" class="form-control" placeholder="Username or email">
+          </div>
+        <div class="input-group input-group-lg">
+          <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+          <input id="password" type="password" class="form-control" placeholder="Password">
+        </div>
+        <button id="btn_log" type="submit" class="float">Login</button>
+       </form>
+ 		</div>
+ </div>
+ <script type="text/javascript">
+  $(function(){ 
+        $("#register0").click(function(){ 
+            location.href = 'register';
+        });
+        $("#btn_log").click(function(){ 
+            var username = $("#username").val();
+            var password = $("#password").val();
+            var data = {"uname":username,"upwd":password};
+            $.ajax({ 
+                url:'/login',
+                type:'post',
+                data: data,
+                success: function(data,status){ 
+                    if(status == 'success'){ 
+                        location.href = '/';
+                    }
+                },
+                error: function(data,status){ 
+                    if(status == 'error'){ 
+                        location.href = 'login';
+                    }
+                }
+            });
+        });
+    });
+  </script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
+    <style type="text/css">
+    .m15{ margin: 15px;}
+     .tc{ text-align: center;font-size: 18px;font-weight: 600;}
+    </style>
+</head>
+<body screen_capture_injected="true">
+    <div class="container">
+    <%message %>
+        <form class="col-sm-offset-4 col-sm-4 form-horizontal" role="form" method="post" onsubmit="return false">
+            <fieldset>
+                <legend></legend>
+                <div class="panel panel-default">
+                <div class="panel-heading">
+                    <p class="tc">请先登录</p>
+                </div>
+                <div class="panel-body m15">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-user"></span>
+                        </span>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="请输入用户名" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-lock"></span>
+                        </span>
+                        <input type="text" class="form-control" id="password" name="password" placeholder="请输入密码" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block" id="login0">登录</button>
+                </div>
+                <div class="form-group">
+                        <button type="button" class="btn btn-info col-sm-2 col-sm-offset-10" id="register0">注册</button>
+                </div>
+                </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(function(){ 
+        $("#register0").click(function(){ 
+            location.href = 'register';
+        });
+        $("#login0").click(function(){ 
+            var username = $("#username").val();
+            var password = $("#password").val();
+            var data = {"uname":username,"upwd":password};
+            $.ajax({ 
+                url:'/login',
+                type:'post',
+                data: data,
+                success: function(data,status){ 
+                    if(status == 'success'){ 
+                        location.href = 'home';//他和req.redirection不能冲突吗
+                    }
+                },
+                error: function(data,status){ 
+                    if(status == 'error'){ 
+                        location.href = 'login';
+                    }
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</head>
+</html>
+
+ -->

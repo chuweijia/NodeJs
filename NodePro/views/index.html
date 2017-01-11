@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="">
+	<title><%= title %></title>
+  	<link rel="stylesheet" href="stylesheets/index.css"/><!-- 有冲突 -->
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css"/>
+    <link rel="stylesheet" href="stylesheets/bootstrap.css"/>
+    <link rel="stylesheet" href="stylesheets/footer.css"/>
+    <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+<body class="body">
+	<header>
+	<nav class="navbar navbar-load navbar-static-top navbar-fixed-top">
+	<div class="container">
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="/">Brand</a>
+	  </div>
+
+	  <!-- Collect the nav links, forms, and other content for toggling -->
+	  <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 0px;">
+	    <ul class="nav navbar-nav" id="nav_ul" >
+	      <li class="" ><a href="/PuBu">PuBu<span class="sr-only">(current)</span></a></li>
+	      <li><a href="/Single">Single</a></li>
+	      <li class=""><a href="#">Link <span class="sr-only">(current)</span></a></li>
+	      <li class=""><a href="#">Link <span class="sr-only">(current)</span></a></li>
+	      <li class="dropdown">
+	        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+	        <ul class="dropdown-menu">
+	          <li><a href="#">Action</a></li>
+	          <li><a href="#">Another action</a></li>
+	          <li><a href="#">Something else here</a></li>
+	          <li role="separator" class="divider"></li>
+	          <li><a href="#">Separated link</a></li>
+	          <li role="separator" class="divider"></li>
+	          <li><a href="#">One more separated link</a></li>
+	        </ul>
+	      </li>
+	      <li id="nav_log"><a href="/login">Sign in</a></li>
+	      <li id="nav_reg" ><a href="/register" style="color:rgb(209,210,212)">Sign up</a></li>
+	      <li class="session"><a href="/logout">Welcome&nbsp;&nbsp;
+	      	<span class="ss-nam" style="color:yellow"><%- user.name %></span></a></li>
+	    </ul>
+	    <form class="navbar-form navbar-left" role="search">
+	      <div class="form-group">
+	        <input type="text" class="form-control" id="form_text" placeholder="Search">
+	      </div>
+	      <span><a href="#" class="icon-search" id="nav_search"></a></span>
+	    </form>
+
+	  </div>
+	</div>
+	</nav>
+	</header>
+	<article id="header">
+		<div class="inner" style="color:#ffffff">
+			<h2>Magna Aliquam</h2>
+			<p>Sed lorem ipsum sed dolor nullam adipiscing</p>
+		</div>
+	</article>
+	 <section>
+	 	<article>
+	 		<div id="lb_container">
+<!--     <div class="mask">
+    
+    </div> -->
+    <div id="list">
+        <div><img src="images/llb-1.jpg"></div>
+        <div><img src="images/llb-3.jpg"></div>
+        <div><img src="images/llb-2.jpg"></div>
+        <div><img src="images/llb-1.jpg"></div>       
+        <div><img src="images/llb-3.jpg"></div>
+        <!-- <span id="lf">left</span>
+        <span id="rt">right</span> -->
+    </div>
+    <div id="buttons">
+        <span  class="red"></span>
+        <span  class="gray"></span>
+        <span  class="gray"></span>
+    </div>
+    <button  id="prev" class="lf  icon-chevron-left icon-4x"></button>
+    <button  id="next" class="rt  icon-chevron-right icon-4x"></button>
+</div>
+    </article>
+		<article id="main">
+			<header class="special container">
+							<div class="gear-rotate"></div>
+							<span class="icon "></span>
+							<h2>As this is my <strong>twentieth</strong> freebie for me
+							<br>
+							I decided to give it a really creative name.</h2>
+							<p>Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,
+							<br>
+							it's minimally designed, fully responsive, built on HTML5/CSS3/<strong>skel</strong>,
+							and, like all my stuff,
+							<br>
+							released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun!</p>
+						</header>
+		</article>
+		<article class="block">
+			<blockquote style="
+    word-spacing: 3px;
+    font-family: 'Lato', sans-serif !important;
+">
+		      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia velit odit fugiat quidem distinctio aliquid corporis repellat quisquam praesentium explicabo, provident est asperiores dicta, saepe unde quibusdam quam, totam illum. <a href="#">habitasse</a> platea dictumst. Integer tristique leo consectetur libero pretium pretium. Nunc sed mauris magna. Praesent varius purus id turpis iaculis iaculis. Nulla <em>convallis magna nunc</em>
+		    </blockquote>
+		</article>
+		<article id="sec2"class="tiles"style=" margin-bottom: 100px;" >
+									<article class="style1">
+										<span class="image">
+											<img src="images/b1.jpg" alt="">
+										</span>
+										<a href="generic.html">
+											<h2>Magna</h2>
+											<div class="content">
+												<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+											</div>
+										</a>
+									</article>
+									<article class="style2">
+										<span class="image">
+											<img src="images/b2.jpg" alt="">
+										</span>
+										<a href="generic.html">
+											<h2>Lorem</h2>
+											<div class="content">
+												<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+											</div>
+										</a>
+									</article>
+									<article class="style3">
+										<span class="image">
+											<img src="images/b3.jpg" alt="">
+										</span>
+										<a href="generic.html">
+											<h2>Feugiat</h2>
+											<div class="content">
+												<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+											</div>
+										</a>
+									</article>
+
+									</article>
+		</article>
+		
+		<article id="sec3" styl=" margin-bottom: 100px;">
+			<div class="container-fluid container-chu">
+				<div class="row">
+				<div class="col-md-3  col-md-offset-0">
+					  <a class="media-left prxl" href="/whoshiring">
+		              <i class="avatar-icon" style="background-image: url(images/1.svg);border-radius:50%;"></i>
+		              <div class="media-body type-sm">
+		              <h4 class="media-heading h5"><a class="link-lowlight" href="/whoshiring">Find work</a></h4>
+		              <div class="hiring-container" data-template="vanilla"><div class="ad discreet">
+					  <p>
+					    <a href="http://jobs.natuelabs.io/jobs/frontend-developer/" title="Natue">Natue</a>,
+					    <a href="http://hrd.cm/XwTnIh" title="Hired">Hired</a>,
+					    <a href="http://www.voxer.com/careers/" title="Voxer">Voxer</a>
+					     and lots of other companies are hiring javascript developers.
+					    <a class="quiet" href="/whoshiring">View all 27…</a>
+					  </p>
+			</div>
+			</div>
+            </div>
+            </a>
+				</div>
+
+		  		<div class="col-md-3  col-md-offset-1">
+					<a class="media-left prxl" href="/whoshiring">
+		              <i class="avatar-icon" style="background-image: url(images/2.svg);border-radius:50%;"></i>
+		              <div class="media-body type-sm">
+		              <h4 class="media-heading h5"><a class="link-lowlight" href="/whoshiring">Find work</a></h4>
+		              <div class="hiring-container" data-template="vanilla"><div class="ad discreet">
+					  <p>
+					    <a href="http://jobs.natuelabs.io/jobs/frontend-developer/" title="Natue">Natue</a>,
+					    <a href="http://hrd.cm/XwTnIh" title="Hired">Hired</a>,
+					    <a href="http://www.voxer.com/careers/" title="Voxer">Voxer</a>
+					     and lots of other companies are hiring javascript developers.
+					    <a class="quiet" href="/whoshiring">View all 27…</a>
+					  </p>
+			</div>
+			</div>
+		    </div>
+	        </a>
+	    </div>
+		  		<div class="col-md-3  col-md-offset-1">
+				<a class="media-left prxl" href="/whoshiring">
+		              <i class="avatar-icon" style="background-image: url(images/3.svg);border-radius:50%;"></i>
+		              <div class="media-body type-sm">
+		              <h4 class="media-heading h5"><a class="link-lowlight" href="/whoshiring">Find work</a></h4>
+		              <div class="hiring-container" data-template="vanilla"><div class="ad discreet">
+					  <p>
+					    <a href="http://jobs.natuelabs.io/jobs/frontend-developer/" title="Natue">Natue</a>,
+					    <a href="http://hrd.cm/XwTnIh" title="Hired">Hired</a>,
+					    <a href="http://www.voxer.com/careers/" title="Voxer">Voxer</a>
+					     and lots of other companies are hiring javascript developers.
+					    <a class="quiet" href="/whoshiring">View all 27…</a>
+					  </p>
+			</div>
+			</div>
+			</div>
+			</a>
+		</div>
+		</article>
+		<article id="sec4" style=" margin-bottom: 200px;margin-top: 100px;">
+			<div id="pane-most-depended-upon" class="pane bg-neutral-11 pbxxl">
+    <div class="sec4-container ptxxl pbxxl">
+      <h2 id="h2" class="em-low mbxxl txt-c">Most depended-upon packages</h2>
+
+      <ul id="ul"class="list-vertical-divider">
+        <li id="li1" class="col-lg-8 col-md-12 col-xs-24">
+                <div class="marginalia-sec4-container">
+                    <div class="marginalia-xxl txt-c">
+                      <svg style="display: none"><symbol viewBox="0 -65 900 1024" id="symbol-2389494444">
+                    <path d="M483.84 180.736l227.328 103.936v304.64L483.84 485.376v-304.64zM199.168 284.16l227.328-103.936v305.152L199.168 589.312V284.16zm638.464 499.712L516.096 946.176c-38.4 18.432-82.432 18.432-120.832 0L72.704 783.872C28.672 761.344 0 715.776 0 667.136v-437.76c0-49.664 28.672-95.232 72.704-116.736L394.24-50.176c38.4-18.432 82.432-18.432 120.832 0l321.536 162.304c44.032 22.528 72.704 68.096 72.704 116.736v437.248c1.024 49.664-27.648 95.232-71.68 117.76zm-88.576-545.28L468.48 111.104c-8.704-4.096-18.432-4.096-27.136 0L160.768 238.592c-11.776 5.12-18.944 16.896-18.944 29.696v356.864c0 12.8 7.68 24.064 18.944 29.696l281.088 127.488c8.704 4.096 18.432 4.096 27.136 0l280.576-127.488c11.776-5.12 18.944-16.896 18.944-29.696V268.288c-.512-12.8-7.68-24.064-19.456-29.696zm-504.32 391.68l210.432-95.232L665.6 630.272l-210.432 95.232-210.432-95.232z"></path>
+                </symbol></svg>
+                <svg class="icon icon-h3 type-neutral-7 mll mts"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#symbol-2389494444"></use></svg>
+                    </div>
+                
+                  <div class="glxxl mrl">
+                
+                    <h3 class="h5 type-ellipsis em-medium mbn">
+                      <a class="type-neutral-1 f-25" href="/package/lodash">lodash</a>
+                    </h3>
+                
+                    <p class="type-ellipsis mbs">Lodash modular utilities.</p>
+                
+                      <p class="type-sm">
+                
+                
+                        <a class="type-neutral-1" href="/package/lodash">4.11.2</a>
+                
+                            published
+                            <span data-date="2016-05-02T15:01:02.189Z" data-date-format="relative">3 days ago</span>
+                            by
+                              <a class="type-neutral-1" href="/~jdalton">jdalton</a>
+                
+                      </p>
+                
+                  </div>
+                </div>
+                
+                <div class="marginalia-sec4-container">
+                    <div class="marginalia-xxl txt-c">
+                      <svg class="icon icon-h3 type-neutral-7 mll mts"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#symbol-2389494444"></use></svg>
+                    </div>
+                
+                  <div class="glxxl mrl">
+                
+                    <h3 class="h5 type-ellipsis em-medium mbn">
+                      <a class="type-neutral-1 f-25" href="/package/async">async</a>
+                    </h3>
+                
+                    <p class="type-ellipsis mbs">Higher-order functions and common patterns for asynchronous code</p>
+                
+                      <p class="type-sm">
+                
+                
+                        <a class="type-neutral-1" href="/package/async">2.0.0-rc.3</a>
+                
+                            published
+                            <span data-date="2016-04-07T21:11:27.200Z" data-date-format="relative">4 weeks ago</span>
+                            by
+                              <a class="type-neutral-1" href="/~aearly">aearly</a>
+                
+                      </p>
+                
+                  </div>
+                </div>
+                
+                <div class="marginalia-sec4-container">
+                    <div class="marginalia-xxl txt-c">
+                      <svg class="icon icon-h3 type-neutral-7 mll mts"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#symbol-2389494444"></use></svg>
+                    </div>
+                
+                  <div class="glxxl mrl">
+                
+                    <h3 class="h5 type-ellipsis em-medium mbn">
+                      <a class="type-neutral-1 f-25" href="/package/request">request</a>
+                    </h3>
+                
+                    <p class="type-ellipsis mbs">Simplified HTTP request client.</p>
+                
+                      <p class="type-sm">
+                
+                
+                        <a class="type-neutral-1" href="/package/request">2.72.0</a>
+                
+                            published
+                            <span data-date="2016-04-17T13:53:37.912Z" data-date-format="relative">3 weeks ago</span>
+                            by
+                              <a class="type-neutral-1" href="/~simov">simov</a>
+                
+                      </p>
+                
+                  </div>
+                </div>
+                
+        </li>
+
+        <li id="li2" class="col-lg-8 col-md-12 hidden-xs hidden-sm">
+                <div class="marginalia-sec4-container">
+                    <div class="marginalia-xxl txt-c">
+                      <svg style="display: none"><symbol viewBox="0 -65 900 1024" id="symbol-2389494444">
+                    <path d="M483.84 180.736l227.328 103.936v304.64L483.84 485.376v-304.64zM199.168 284.16l227.328-103.936v305.152L199.168 589.312V284.16zm638.464 499.712L516.096 946.176c-38.4 18.432-82.432 18.432-120.832 0L72.704 783.872C28.672 761.344 0 715.776 0 667.136v-437.76c0-49.664 28.672-95.232 72.704-116.736L394.24-50.176c38.4-18.432 82.432-18.432 120.832 0l321.536 162.304c44.032 22.528 72.704 68.096 72.704 116.736v437.248c1.024 49.664-27.648 95.232-71.68 117.76zm-88.576-545.28L468.48 111.104c-8.704-4.096-18.432-4.096-27.136 0L160.768 238.592c-11.776 5.12-18.944 16.896-18.944 29.696v356.864c0 12.8 7.68 24.064 18.944 29.696l281.088 127.488c8.704 4.096 18.432 4.096 27.136 0l280.576-127.488c11.776-5.12 18.944-16.896 18.944-29.696V268.288c-.512-12.8-7.68-24.064-19.456-29.696zm-504.32 391.68l210.432-95.232L665.6 630.272l-210.432 95.232-210.432-95.232z"></path>
+                </symbol></svg>
+                <svg class="icon icon-h3 type-neutral-7 mll mts"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#symbol-2389494444"></use></svg>
+                    </div>
+                
+                  <div class="glxxl mrl">
+                
+                    <h3 class="h5 type-ellipsis em-medium mbn">
+                      <a class="type-neutral-1 f-25" href="/package/underscore">underscore</a>
+                    </h3>
+                
+                    <p class="type-ellipsis mbs">JavaScript's functional programming helper library.</p>
+                
+                      <p class="type-sm">
+                
+                
+                        <a class="type-neutral-1" href="/package/underscore">1.8.3</a>
+                
+                            published
+                            <span data-date="2015-04-02T15:32:54.520Z" data-date-format="relative">a year ago</span>
+                            by
+                              <a class="type-neutral-1" href="/~jashkenas">jashkenas</a>
+                
+                      </p>
+                
+                  </div>
+                </div>
+                
+                <div class="marginalia-sec4-container">
+                    <div class="marginalia-xxl txt-c">
+                      <svg class="icon icon-h3 type-neutral-7 mll mts"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#symbol-2389494444"></use></svg>
+                    </div>
+                
+                  <div class="glxxl mrl">
+                
+                    <h3 class="h5 type-ellipsis em-medium mbn">
+                      <a class="type-neutral-1 f-25" href="/package/express">express</a>
+                    </h3>
+                
+                    <p class="type-ellipsis mbs">Fast, unopinionated, minimalist web framework</p>
+                
+                      <p class="type-sm">
+                
+                
+                        <a class="type-neutral-1" href="/package/express">4.13.4</a>
+                
+                            published
+                            <span data-date="2016-01-22T02:15:21.453Z" data-date-format="relative">3 months ago</span>
+                            by
+                              <a class="type-neutral-1" href="/~dougwilson">dougwilson</a>
+                
+                      </p>
+                
+                  </div>
+                </div>
+                
+                <div class="marginalia-sec4-container">
+                    <div class="marginalia-xxl txt-c">
+                      <svg class="icon icon-h3 type-neutral-7 mll mts"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#symbol-2389494444"></use></svg>
+                    </div>
+                
+                  <div class="glxxl mrl">
+                
+                    <h3 class="h5 type-ellipsis em-medium mbn">
+                      <a class="type-neutral-1 f-25" href="/package/commander">commander</a>
+                    </h3>
+                
+                    <p class="type-ellipsis mbs">the complete solution for node.js command-line programs</p>
+                
+                      <p class="type-sm">
+                
+                
+                        <a class="type-neutral-1" href="/package/commander">2.9.0</a>
+                
+                            published
+                            <span data-date="2015-10-13T15:26:25.933Z" data-date-format="relative">7 months ago</span>
+                            by
+                              <a class="type-neutral-1" href="/~zhiyelee">zhiyelee</a>
+                
+                      </p>
+                
+                  </div>
+                </div>
+                
+        </li>
+      </ul>
+
+    </div>
+  </div>
+		</article>
+	</section>
+	<footer class="footer-distributed">
+			<div class="footer-left">
+
+				<h3>xdoctor<span>me</span></h3>
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					·
+					<a href="#">Blog</a>
+					·
+					<a href="#">Pricing</a>
+					·
+					<a href="#">About</a>
+					·
+					<a href="#">Faq</a>
+					·
+					<a href="#">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Company Name &copy; 2016</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>21 Revolution Street</span> Paris, France</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+562915256</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">xdoctor.me</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+	<script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+
+							$(document).ready(function(){
+								var ch = $(document.body).height();
+								$(window).scroll( function() {
+									if($(window).scrollTop()>500){
+										$("nav").removeClass("navbar-load").addClass("navbar-default");
+										$("#nav_log").addClass("nav-log");
+
+										// $("#nav_reg").addClass("nav-reg");
+										// $("#nav_ul #nav_reg a").addClass("nav-reg-a");
+										$("#nav_reg").css({ "background": "rgb(113,202,82)" });
+										$("#nav_reg a").css({ "color": "#ffffff"});
+										// $("#nav_reg").css("color","#ffffff");
+
+									}
+									else if($(window).scrollTop()<500){
+										$("nav").removeClass("navbar-default").addClass("navbar-load");
+										$("#nav_log").removeClass("nav-log");
+										$("#nav_reg").removeClass("nav-reg");
+										$("#nav_reg").css({ "background": "transparent" });
+										$("#nav_reg a").css({ "color": "rgb(209,210,212)"});
+
+									}
+								});
+
+							});
+
+
+
+
+// 图片轮播
+		 $(window).load(function(){
+		var i = 0;
+		function animate(n){
+
+			// var  newleft = parseInt(document.getElementById("list").style.left)+n;
+            var  newleft = parseInt($("#list").css("left"))+n;
+				$("#list").stop().animate({
+					left:newleft+'px'
+			},1000,function(){
+				if(newleft > -1366){
+                        $("#list").css('left', -4098);
+                    }
+                    if(newleft < (-4098)) {//归位 三倍图片长度
+                         $("#list").css('left', -1366);//写死之后的bug
+                    }
+			});
+
+		}
+		function animate2(ind){
+			var newleft2 =parseInt(ind*(-1366));
+				$("#list").animate({
+					left:newleft2+'px'
+				},1000,function(){
+					if(newleft2 > -1366){
+                        console.log("下");
+                        $("#list").css('left', -4098);//3600修改
+                    }
+                    if(newleft2 <(-4098)) {//归位
+                         $("#list").css('left', -1366);
+                    }
+				});
+		}
+		function showButton(){
+           $("#buttons span").eq(i).removeClass("gray").addClass("red").siblings().removeClass("red").addClass("gray");
+		}
+
+        
+		   $("#prev").click(function(){
+            console.log("prev点击");
+			i--;
+			if(i== -1){
+				i= 2;
+			}
+			animate(1366);
+			showButton(i);
+
+		});
+		$("#next").click(function(){
+            console.log("next点击");
+			i++;
+			if(i==2){
+				i= -1;
+			}
+			animate(-1366);		
+			showButton(i);
+		});
+
+		$("#buttons span").each(function(){
+			$(this).click(function(){
+				var ind = $(this).index()+1;			
+				animate2(ind);
+				 $(this).removeClass("gray").addClass("red").siblings().removeClass("red").addClass("gray");
+				
+			});
+
+		});
+        console.log($(".mask").css("opacity"));
+        if($(".mask").css("opacity")){
+            $(".mask").addClass("none");
+            // 遮罩处理完毕 
+        };
+});
+	</script>
+</body>
+</html>
