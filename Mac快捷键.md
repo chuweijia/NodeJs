@@ -22,7 +22,7 @@
 `command + shift + p`  open Package Control  
 `command + F ` find  
 `command + ／ - ` 字号大小    
-`切换为中文  shift + []`  生成 ` 「」`  
+`切换为中文  shift + []`  生成 ` 「」`    
 `切换为英文  shift + []`  生成 ` {} `  
 
 *  qq截图    
