@@ -13,7 +13,7 @@
 `command + option + m ` 窗口最小化  
 `command + 空格（即右上角的放大镜）` + `ter` + ` 回车 `  调起Mac 终端  
 `finder` - `前往` - `打开文件夹` - `/private/etc/` - hosts文件  
-`shift` + `command` + `g`／ `h`／`d` 前往文件夹 个人 桌面    
+`shift` + `command` + `g`／ `h`／`d` 前往文件夹／个人／ 桌面    
 
                     
                     
