@@ -9,13 +9,16 @@
 `三指 + 左右滑动` 复制整行  
 `三指 + 左右移动title` 移动当前窗口   
 `四指 + 左右滑动` 左右切换满屏的窗口     
-`command + shift + f ` 窗口最大化／恢复  
+`command + shift + f ` 窗口最大化／恢复    
 `command + option + m ` 窗口最小化  
 `command + 空格（即右上角的放大镜）` + `ter` + ` 回车 `  调起Mac 终端  
 `finder` - `前往` - `打开文件夹` - `/private/etc/` - hosts文件  
 `shift` + `command` + `g`／ `h`／`d` 前往文件夹／个人／ 桌面    
 
-                    
+`control + option +空格 ` 中英文切换  
+`选中 + return ` 重命名  
+
+                    
                     
  
 *  sublime  
