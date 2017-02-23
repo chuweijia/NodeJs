@@ -16,7 +16,9 @@
 `shift` + `command` + `g`／ `h`／`d` 前往文件夹／个人／ 桌面    
 
 `control + option +空格 ` 中英文切换  
-`选中 + return ` 重命名  
+`选中 + return ` 重命名    
+`command + c 复制` 后按 `option + command + v 粘贴` --> 剪切文件
+`command + x` 剪切文本  
 
                     
                     
