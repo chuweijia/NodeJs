@@ -18,7 +18,10 @@
 `control + option +空格 ` 中英文切换  
 `选中 + return ` 重命名    
 `command + c 复制` 后按 `option + command + v 粘贴` --> 剪切文件
-`command + x` 剪切文本  
+`command + x` 剪切文本    
+
+`which node` / `whereis node` 控制台输出 `node` 的绝对安装路径    
+
 
                     
                     
